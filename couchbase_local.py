@@ -21,7 +21,7 @@ auth = PasswordAuthenticator(
 
 # Get a reference to our cluster
 # NOTE: For TLS/SSL connection use 'couchbases://<your-ip-address>' instead
-cluster = Cluster('couchbase://192.168.15.143', ClusterOptions(auth))
+cluster = Cluster('couchbase://seu_IP', ClusterOptions(auth))
 
 # Wait until the cluster is ready for use.
 cluster.wait_until_ready(timedelta(seconds=5))
